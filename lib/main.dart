@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:news_app/screens/home.dart';
+import 'package:get/get.dart';
+import 'package:news_app/components/navigation.dart';
+import 'package:news_app/homepagecontroller.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    BottomNavigationController Controller =
+        Get.put(BottomNavigationController());
     return GetMaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Home(),
-      ),
+      home: Homepagecontroller(),
     );
   }
 }

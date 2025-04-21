@@ -10,9 +10,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Padding(
-          padding: const EdgeInsets.only(bottom: 10.0, left: 10, right: 10),
-          child: BottomNavigationBarControllerWidget()),
       appBar: AppBar(
         toolbarHeight: 90,
         backgroundColor: const Color.fromARGB(255, 58, 58, 58),

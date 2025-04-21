@@ -23,8 +23,8 @@ class BottomNavigationBarControllerWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             _buildNavItem(controller, 0, Icons.home),
-            _buildNavItem(controller, 1, Icons.search),
-            _buildNavItem(controller, 2, Icons.person),
+            _buildNavItem(controller, 1, Icons.book),
+            _buildNavItem(controller, 2, Icons.settings),
           ],
         ),
       ),
